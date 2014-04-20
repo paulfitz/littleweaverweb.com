@@ -7,13 +7,13 @@ $orange-bright: #F80
 $orange-dark: #C80
 $yellow: #FFCF40
 
-$max-width: 780px
-
 // Bootstrap Overrides
 $brand-primary: $orange-dark
 
 @import variables
 @import bootstrap
+
+$max-width: $screen-sm-min
 
 html
 	height: 100%
@@ -83,6 +83,11 @@ a:hover img
 .main, .site-footer
 	@extend .margin-trailer
 
+.main
+	+clearfix
+	> .row-fluid
+		margin: 0 -15px
+
 .logotype
 	margin: $line-height-computed 0
 	color: $orange-dark
@@ -122,3 +127,6 @@ a:hover img
 
 .muted
 	color: $gray-light
+
+.big-bird
+	opacity: .7

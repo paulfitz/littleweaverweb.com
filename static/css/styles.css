@@ -6383,7 +6383,7 @@ a:hover img {
 }
 
 .lw-container {
-  max-width: 780px;
+  max-width: 768px;
 }
 
 .site-header {
@@ -6407,6 +6407,17 @@ a:hover img {
   .site-header h1 {
     float: left;
   }
+}
+
+.main:before, .main:after {
+  content: " ";
+  display: table;
+}
+.main:after {
+  clear: both;
+}
+.main > .row-fluid {
+  margin: 0 -15px;
 }
 
 .logotype {
@@ -6465,4 +6476,8 @@ a:hover .member-name {
 
 .muted {
   color: #aaaaaa;
+}
+
+.big-bird {
+  opacity: 0.7;
 }
